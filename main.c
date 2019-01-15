@@ -33,8 +33,17 @@ int main()
 
         }
 
-        if (code == 1) {
-            /* code */
+        if (code == 2) {
+            int qu ;
+            printf("请输入要取出的金额\n");
+            
+            qian -= qu ;
+
+            printf("取钱成功，点击回车继续\n");
+            char x;
+            printf("%c",&x);
+            printf("%c",&x);
+
         }
 
         if (code == 1) {
