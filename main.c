@@ -13,9 +13,9 @@ int main()
         printf("3--余额\n");
         printf("4--退出系统\n");
 
-        int code = 0;
-        scanf("%d",&code);
         printf("请输入相对应的功能编号\n");
+        int code ;
+        scanf("%d",&code);
 
         
         if (code == 1) {
