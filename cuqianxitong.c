@@ -2,7 +2,7 @@
 
 int main()
 {
-    int qian ;
+    int qian = 0 ;
     printf("进入存钱管理系统\n" );
 
 
@@ -36,22 +36,41 @@ int main()
         if (code == 2) {
             int qu ;
             printf("请输入要取出的金额\n");
-            
-            qian -= qu ;
 
-            printf("取钱成功，点击回车继续\n");
+            scanf("%d",&qu);
+            
+            if (qu>qian) {
+                printf("余额不足，点击回车继续\n");
+            }
+            else{
+                qian -= qu ;
+                printf("取钱成功，点击回车继续\n");
+            }
+           
+
+            
             char x;
             printf("%c",&x);
             printf("%c",&x);
 
         }
 
-        if (code == 1) {
-            /* code */
+        if (code == 3) {
+
+            printf("当前余额为%d\n",qian);
+
+            printf("查询完毕，点击回车继续\n");
+            char x;
+            printf("%c",&x);
+            printf("%c",&x);
+
         }
 
-        if (code == 1) {
-            /* code */
+        if (code == 4) {
+
+            printf("退出系统\n");
+            break;
+
         }
         
     }
